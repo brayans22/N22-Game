@@ -1,0 +1,21 @@
+@startuml
+
+Class Game
+{
+    - game_instance : Game
+    - menu : Menu
+    - map : Map
+    - Game() : Game
+    - get_instance() : Game
+    + start() : void
+}
+
+Class Menu
+{
+    + print_welcome_message() : void
+}
+
+Game --> Menu
+
+
+@enduml
